@@ -87,6 +87,6 @@ VITE_MEDICAL_ASSISTANT_PROMPT
 
 ## License
 
-This project is licensed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the [MIT License](LICENSE).
 
 ---
