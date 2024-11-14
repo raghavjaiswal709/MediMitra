@@ -27,11 +27,11 @@ function App() {
   
     setChatHistory(prev => [...prev, { type: "question", content: currentQuestion }]);
   
-    const medicalAssistantPrompt = import.meta.env.VITE_MEDICAL_ASSISTANT_PROMPT;
+    const medicalAssistantPrompt = import.meta.env.MEDICAL_ASSISTANT_PROMPT;
   
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.VITE_API_GENERATIVE_LANGUAGE_CLIENT}`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.API_GENERATIVE_LANGUAGE_CLIENT}`,
         method: "post",
         data: {
           contents: [
